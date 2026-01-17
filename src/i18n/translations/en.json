@@ -1,0 +1,231 @@
+{
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search for anything...",
+    "allLocations": "All Locations",
+    "postAd": "Post Ad",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "signOut": "Sign Out",
+    "dashboard": "Dashboard",
+    "myListings": "My Listings",
+    "savedItems": "Saved Items",
+    "viewAll": "View All",
+    "seeMore": "See More",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "edit": "Edit",
+    "delete": "Delete",
+    "share": "Share",
+    "report": "Report",
+    "free": "Free",
+    "negotiable": "Negotiable",
+    "contactForPrice": "Contact for price",
+    "verified": "Verified",
+    "featured": "Featured",
+    "urgent": "Urgent",
+    "new": "New",
+    "views": "views",
+    "favorites": "favorites",
+    "postedOn": "Posted on",
+    "expiresOn": "Expires on",
+    "location": "Location",
+    "category": "Category",
+    "price": "Price",
+    "all": "All",
+    "filter": "Filter",
+    "sort": "Sort",
+    "clearFilters": "Clear All Filters",
+    "noResults": "No results found",
+    "tryAdjusting": "Try adjusting your search or filters"
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "howItWorks": "How it works",
+    "help": "Help & Support",
+    "pricing": "Pricing",
+    "welcome": "Welcome to HireLoop"
+  },
+  "hero": {
+    "title": "Find Anything, Anywhere",
+    "subtitle": "Buy, sell, hire, and discover opportunities on the world's most trusted classified marketplace",
+    "searchButton": "Search",
+    "stats": {
+      "listings": "Active Listings",
+      "countries": "Countries",
+      "users": "Happy Users"
+    }
+  },
+  "categories": {
+    "title": "Browse Categories",
+    "subtitle": "Explore thousands of listings across all categories",
+    "jobs": "Jobs & Hiring",
+    "services": "Services",
+    "forSale": "For Sale",
+    "property": "Property",
+    "vehicles": "Vehicles",
+    "digital": "Digital & Online",
+    "community": "Community"
+  },
+  "listings": {
+    "featured": "Featured Listings",
+    "featuredSubtitle": "Hand-picked listings from verified sellers",
+    "recent": "Recent Listings",
+    "recentSubtitle": "Fresh listings just posted",
+    "related": "Related Listings",
+    "viewListing": "View Listing",
+    "contactSeller": "Contact Seller",
+    "saveToFavorites": "Save to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "reportListing": "Report Listing",
+    "shareListing": "Share Listing"
+  },
+  "postAd": {
+    "title": "Post Your Ad",
+    "selectCategory": "Select a Category",
+    "selectCategoryDesc": "Choose the category that best describes your listing",
+    "subcategory": "Subcategory",
+    "listingDetails": "Listing Details",
+    "listingDetailsDesc": "Provide information about your listing",
+    "titleLabel": "Title",
+    "titlePlaceholder": "e.g., iPhone 15 Pro Max - Excellent Condition",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Describe your item in detail...",
+    "country": "Country",
+    "city": "City",
+    "area": "Area (optional)",
+    "addPhotos": "Add Photos",
+    "addPhotosDesc": "Add up to 6 photos. The first image will be the cover.",
+    "setPrice": "Set Your Price",
+    "setPriceDesc": "How would you like to price this listing?",
+    "fixedPrice": "Fixed Price",
+    "currency": "Currency",
+    "preview": "Preview Your Listing",
+    "previewDesc": "Review your listing before publishing",
+    "publish": "Publish Listing",
+    "publishing": "Publishing...",
+    "freeTrialNotice": "Your listing will be active for 30 days with your free trial.",
+    "steps": {
+      "category": "Category",
+      "details": "Details",
+      "images": "Images",
+      "pricing": "Pricing",
+      "preview": "Preview"
+    }
+  },
+  "search": {
+    "resultsFor": "Results for",
+    "allListings": "All Listings",
+    "resultsFound": "{{count}} results found",
+    "inLocation": "in {{location}}",
+    "sortBy": {
+      "newest": "Newest First",
+      "oldest": "Oldest First",
+      "priceLow": "Price: Low to High",
+      "priceHigh": "Price: High to Low",
+      "popular": "Most Popular"
+    },
+    "filters": {
+      "categories": "Categories",
+      "priceRange": "Price Range",
+      "minPrice": "Min",
+      "maxPrice": "Max",
+      "sellerType": "Seller Type",
+      "verifiedOnly": "Verified Sellers Only"
+    }
+  },
+  "seller": {
+    "memberSince": "Member since",
+    "responseRate": "Response Rate",
+    "responseTime": "Avg. Response Time",
+    "totalListings": "Total Listings",
+    "activeListings": "Active Listings",
+    "viewProfile": "View Profile",
+    "sendMessage": "Send Message"
+  },
+  "trust": {
+    "title": "Why Choose HireLoop?",
+    "subtitle": "Join millions of satisfied users in over 50 countries",
+    "verifiedSellers": "Verified Sellers",
+    "verifiedSellersDesc": "All sellers are verified for your safety",
+    "securePayments": "Secure Payments",
+    "securePaymentsDesc": "Protected transactions with buyer guarantee",
+    "support": "24/7 Support",
+    "supportDesc": "Round-the-clock customer support"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Post your first ad for free and reach millions of buyers",
+    "postFirstAd": "Post Your First Ad",
+    "learnMore": "Learn More"
+  },
+  "footer": {
+    "tagline": "The world's most trusted classified marketplace",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "careers": "Careers",
+    "press": "Press",
+    "blog": "Blog",
+    "support": "Support",
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "safetyTips": "Safety Tips",
+    "reportIssue": "Report Issue",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "copyright": "© {{year}} HireLoop. All rights reserved.",
+    "selectCountry": "Select Country"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Get started for free. Upgrade only when you need more visibility.",
+    "free": {
+      "name": "Free",
+      "description": "Perfect for getting started",
+      "features": ["Browse all listings", "Post up to 1 active ad", "Basic visibility"]
+    },
+    "standard": {
+      "name": "Standard",
+      "description": "Best for individuals & small businesses",
+      "features": ["Post up to 5 active ads", "Higher search visibility", "Priority support"]
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Maximum exposure and trust",
+      "features": ["Unlimited active ads", "Featured placement", "Verified badge", "Top priority support"]
+    },
+    "notSure": "Not sure which plan is right?",
+    "startFree": "Start free — you can upgrade anytime.",
+    "getHelp": "Get Help"
+  },
+  "location": {
+    "selectCountry": "Select Country",
+    "selectState": "Select State/Province",
+    "selectCity": "Select City",
+    "searchCountry": "Search country...",
+    "searchState": "Search state/province...",
+    "searchCity": "Search city...",
+    "detectLocation": "Detect my location",
+    "detecting": "Detecting...",
+    "changeLocation": "Change Location"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "Please sign in to continue",
+    "network": "Network error. Please check your connection."
+  }
+}
