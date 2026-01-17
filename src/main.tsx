@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+import { createRoot } from 'react-dom/client';
+import App from './App.tsx';
+import './index.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+createRoot(document.getElementById("root")!).render(<App />);
