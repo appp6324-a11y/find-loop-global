@@ -14,16 +14,270 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      categories: {
+        Row: {
+          created_at: string
+          description: string | null
+          icon: string
+          id: string
+          listing_count: number
+          name: string
+          parent_id: string | null
+          slug: string
+          sort_order: number
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          icon?: string
+          id?: string
+          listing_count?: number
+          name: string
+          parent_id?: string | null
+          slug: string
+          sort_order?: number
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          icon?: string
+          id?: string
+          listing_count?: number
+          name?: string
+          parent_id?: string | null
+          slug?: string
+          sort_order?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "categories_parent_id_fkey"
+            columns: ["parent_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      listings: {
+        Row: {
+          area: string | null
+          attributes: Json | null
+          category_id: string | null
+          city: string | null
+          country: string
+          country_code: string
+          created_at: string
+          currency: string
+          description: string | null
+          expires_at: string | null
+          favorites: number
+          featured: boolean
+          id: string
+          images: string[] | null
+          price: number | null
+          price_max: number | null
+          price_min: number | null
+          price_type: Database["public"]["Enums"]["price_type"]
+          slug: string
+          status: Database["public"]["Enums"]["listing_status"]
+          subcategory_id: string | null
+          title: string
+          updated_at: string
+          urgent: boolean
+          user_id: string
+          views: number
+        }
+        Insert: {
+          area?: string | null
+          attributes?: Json | null
+          category_id?: string | null
+          city?: string | null
+          country?: string
+          country_code?: string
+          created_at?: string
+          currency?: string
+          description?: string | null
+          expires_at?: string | null
+          favorites?: number
+          featured?: boolean
+          id?: string
+          images?: string[] | null
+          price?: number | null
+          price_max?: number | null
+          price_min?: number | null
+          price_type?: Database["public"]["Enums"]["price_type"]
+          slug: string
+          status?: Database["public"]["Enums"]["listing_status"]
+          subcategory_id?: string | null
+          title: string
+          updated_at?: string
+          urgent?: boolean
+          user_id: string
+          views?: number
+        }
+        Update: {
+          area?: string | null
+          attributes?: Json | null
+          category_id?: string | null
+          city?: string | null
+          country?: string
+          country_code?: string
+          created_at?: string
+          currency?: string
+          description?: string | null
+          expires_at?: string | null
+          favorites?: number
+          featured?: boolean
+          id?: string
+          images?: string[] | null
+          price?: number | null
+          price_max?: number | null
+          price_min?: number | null
+          price_type?: Database["public"]["Enums"]["price_type"]
+          slug?: string
+          status?: Database["public"]["Enums"]["listing_status"]
+          subcategory_id?: string | null
+          title?: string
+          updated_at?: string
+          urgent?: boolean
+          user_id?: string
+          views?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "listings_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "listings_subcategory_id_fkey"
+            columns: ["subcategory_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          area: string | null
+          avatar_url: string | null
+          bio: string | null
+          city: string | null
+          country: string
+          country_code: string
+          created_at: string
+          id: string
+          name: string
+          phone: string | null
+          updated_at: string
+          verified: string
+        }
+        Insert: {
+          area?: string | null
+          avatar_url?: string | null
+          bio?: string | null
+          city?: string | null
+          country?: string
+          country_code?: string
+          created_at?: string
+          id: string
+          name?: string
+          phone?: string | null
+          updated_at?: string
+          verified?: string
+        }
+        Update: {
+          area?: string | null
+          avatar_url?: string | null
+          bio?: string | null
+          city?: string | null
+          country?: string
+          country_code?: string
+          created_at?: string
+          id?: string
+          name?: string
+          phone?: string | null
+          updated_at?: string
+          verified?: string
+        }
+        Relationships: []
+      }
+      saved_listings: {
+        Row: {
+          created_at: string
+          id: string
+          listing_id: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          listing_id: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          listing_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "saved_listings_listing_id_fkey"
+            columns: ["listing_id"]
+            isOneToOne: false
+            referencedRelation: "listings"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "moderator" | "user"
+      listing_status:
+        | "draft"
+        | "pending"
+        | "active"
+        | "expired"
+        | "suspended"
+        | "sold"
+      price_type: "fixed" | "negotiable" | "free" | "contact" | "range"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +404,17 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "moderator", "user"],
+      listing_status: [
+        "draft",
+        "pending",
+        "active",
+        "expired",
+        "suspended",
+        "sold",
+      ],
+      price_type: ["fixed", "negotiable", "free", "contact", "range"],
+    },
   },
 } as const
